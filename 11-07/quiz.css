@@ -1,0 +1,48 @@
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.container{
+    max-width: 600px;
+    margin: auto;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.question{
+    margin-bottom: 2opx;
+}
+.timer{
+    height: 10px;
+    background: green;
+    transition: width is linear;
+}
+input[type="radio"]:checked + label{
+    font-weight: bold;
+}
+.correct{
+    background: green;
+}
+.incorrect{
+    background: red;
+}
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #rgbs(0,0,0,0.5);
+    display: flex;
+    justify-content: centre;
+    align-items: centre;
+    backdrop-filter: blur(5x);
+}
+.modal-content{
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: center;
+    text-align: center;
+}
+.hidden {
+    display: none
+}
